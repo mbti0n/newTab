@@ -1,2 +1,1 @@
-# newtab.github.io
-New Tab Page
+Just a new tab page
