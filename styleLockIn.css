@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "JetBrainsMono Nerd Font Propo";
+    src: url('JetBrainsMonoNerdFontPropo-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "JetBrainsMono Nerd Font Propo";
+    src: url('JetBrainsMonoNerdFontPropo-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+#main {
+    background-color: #1D1F28;
+    color: #CAD3F5;
+    font-family: JetBrainsMono Nerd Font Propo;
+    margin: 18%;
+    transition: background-color 0.25s;
+    animation: 0.25s ease-out 0s 1 running show;
+    scale: 1.15
+}
+
+#main.fade {
+    background-color: #e6e9ef;
+}
+
+#timeAndDate {
+    margin-right: 250px;
+    clear: both;
+}
+
+#time {
+    font-size: 65px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+#date {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+#modeToggle1 {
+    font-size: 16px;
+    color: #CAD3F5;
+    text-decoration: none;
+}
+
+#modeToggle2 {
+    font-size: 16px;
+    color: #4c4f69;
+    text-decoration: none;
+    display: none;
+}
+
+#searchButton {
+    font-size: 16px;
+    /* font-weight: 500; */
+    /* margin-top: 25px; */
+    /* margin-top: 7px; */
+    /* background-col12bddb; */
+    color: #12bddb;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+#searchButton:hover {
+    background-color: #12bddb;
+    color: #181825;
+}
+
+div {
+    float: left;
+}
+
+a:not#subreddit {
+    font-size: 15px;
+}
+
+#group1 {
+    border-top: solid 3px;
+    border-color: #12bddb;
+    a:link, a:visited {
+        color: #12bddb;
+        text-decoration: none
+    }
+    a:hover {
+        animation: 0.2s ease-in 0s 1 running myColorChange1;
+        background-color: #12bddb;
+        color: #181825
+    }
+    h2 {
+        color: #12bddb
+    }
+    padding-right: 50px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    animation: 0.3s 1 ease running slideDown;
+}
+
+#group2 {
+    border-top: solid 3px;
+    border-color: #f78848;
+    a:link, a:visited {
+        color: #f78848;
+        text-decoration: none
+    }
+    a:hover {
+        animation: 0.2s ease-in 0s 1 running myColorChange2;
+        background-color: #f78848;
+        color: #181825
+    }
+    h2 {
+        color: #f78848
+    }
+    padding-right: 50px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    animation: 0.3s 1 ease running slideDown;
+}
+
+#group3 {
+    border-top: solid 3px;
+    border-color: #b07ef2;
+    a:link, a:visited {
+        color: #b07ef2;
+        text-decoration: none
+    }
+    a:hover {
+        animation: 0.2s ease-in 0s 1 running myColorChange3;
+        background-color: #b07ef2;
+        color: #181825
+    }
+    h2 {
+        color: #b07ef2
+    }
+    padding-right: 50px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    animation: 0.3s 1 ease running slideDown;
+}
+
+input {
+    font-family: JetBrainsMono Nerd Font Propo;
+    background-color: #494d64;
+    color: #CAD3F5;
+    border: 0px;
+    padding: 5px;
+    outline: none;
+}
+
+#searchBar {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#submit {
+    color: #12bddb;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Responsive HTML */
+@media screen and (max-width: 1080px) {
+    div {
+        width: 100%;
+    }
+    #content {
+        float: left;
+    }
+    #searchButton {
+        animation: 0.2s ease-in-out 0s 1 running myColorChange1;
+    }
+    #timeAndDate {
+        margin-top: -3%;
+    }
+    #group1 {
+        border-left: solid 3px;
+        border-top: solid 0px;
+        border-color: #12bddb;
+    }
+    #group2 {
+        border-left: solid 3px;
+        border-top: solid 0px;
+        border-color: #f78848;
+    }
+    #group3 {
+        border-left: solid 3px;
+        border-top: solid 0px;
+        border-color: #b07ef2;
+    }
+}
+
+hr {
+    border: 1.5px solid #13BDDC;
+    width: 40px;
+    margin-left: 0px
+
+}
+
+/* Animations */
+
+@keyframes myColorChange1 {
+    0% {background-color: #00000000; color: #12bddb}
+    100% {background-color: #12bddb;}
+}
+
+@keyframes myColorChange2 {
+    0% {background-color: #00000000; color: #f78848}
+    100% {background-color: #f78848;}
+}
+
+@keyframes myColorChange3 {
+    0% {background-color: #00000000; color: #b07ef2}
+    100% {background-color: #b07ef2;}
+}
+
+@keyframes show {
+    0% {background-color: #000000;}
+    100% {background-color: #1D1F28;}
+}
+
+@keyframes show2 {
+    0% {background-color: #1D1F28;}
+    100% {background-color: #e6e9ef;}
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+    from{transform: translateY(50%)}
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+    from{transform: translateX(-15%)}
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
+    to{transform: translateX(-15%)}
+}
