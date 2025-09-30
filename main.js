@@ -118,14 +118,14 @@ function lightTheme() {
 
 function darkTheme() {
     // Body
-    document.getElementById("main").style.backgroundColor = "#1D1F28";
+    document.getElementById("main").style.backgroundColor = "#141414";
     
     // Date & time
-    document.getElementById("time").style.color = "#CAD3F5"
-    document.getElementById("date").style.color = "#CAD3F5"
+    document.getElementById("time").style.color = "white"
+    document.getElementById("date").style.color = "white"
     
     // Action bar
-    document.getElementById("actions").style.color = "#CAD3F5";
+    document.getElementById("actions").style.color = "white";
 
     // Light/dark mode toggle button
     document.getElementById("modeToggle2").style.display = "none";
@@ -146,7 +146,7 @@ function darkTheme() {
 
     // Search bar
     document.getElementById("searchBar").style.backgroundColor = "#494d64";
-    document.getElementById("searchBar").style.color = "#CAD3F5";
+    document.getElementById("searchBar").style.color = "white";
     document.getElementById("submit").style.backgroundColor = "#494d64";
     document.getElementById("cancel").style.backgroundColor = "#494d64";
     document.getElementById("submit").style.color = "#90D7E3";
