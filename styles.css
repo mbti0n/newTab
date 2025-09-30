@@ -11,8 +11,8 @@
 }
 
 #main {
-    background-color: #1D1F28;
-    color: #CAD3F5;
+    background-color: #141414;
+    color: white;
     font-family: JetBrainsMono Nerd Font Propo;
     margin: 18%;
     transition: background-color 0.25s;
@@ -44,7 +44,7 @@
 
 #modeToggle1 {
     font-size: 16px;
-    color: #CAD3F5;
+    color: white;
     text-decoration: none;
 }
 
@@ -61,13 +61,13 @@
     /* margin-top: 25px; */
     /* margin-top: 7px; */
     /* background-col12bddb; */
-    color: #12bddb;
+    color: #78A9FF;
     text-decoration: none;
     transition: background-color 0.2s ease;
 }
 
 #searchButton:hover {
-    background-color: #12bddb;
+    background-color: #78A9FF;
     color: #181825;
 }
 
@@ -81,18 +81,18 @@ a:not#subreddit {
 
 #group1 {
     border-top: solid 3px;
-    border-color: #12bddb;
+    border-color: #78A9FF;
     a:link, a:visited {
-        color: #12bddb;
+        color: #78A9FF;
         text-decoration: none
     }
     a:hover {
         animation: 0.2s ease-in 0s 1 running myColorChange1;
-        background-color: #12bddb;
+        background-color: #78A9FF;
         color: #181825
     }
     h2 {
-        color: #12bddb
+        color: #78A9FF
     }
     padding-right: 50px;
     padding-left: 10px;
@@ -123,18 +123,18 @@ a:not#subreddit {
 
 #group3 {
     border-top: solid 3px;
-    border-color: #b07ef2;
+    border-color: #EE5396;
     a:link, a:visited {
-        color: #b07ef2;
+        color: #EE5396;
         text-decoration: none
     }
     a:hover {
         animation: 0.2s ease-in 0s 1 running myColorChange3;
-        background-color: #b07ef2;
+        background-color: #EE5396;
         color: #181825
     }
     h2 {
-        color: #b07ef2
+        color: #EE5396
     }
     padding-right: 50px;
     padding-left: 10px;
@@ -145,7 +145,7 @@ a:not#subreddit {
 input {
     font-family: JetBrainsMono Nerd Font Propo;
     background-color: #494d64;
-    color: #CAD3F5;
+    color: white;
     border: 0px;
     padding: 5px;
     outline: none;
@@ -157,7 +157,7 @@ input {
 }
 
 #submit {
-    color: #12bddb;
+    color: #78A9FF;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -179,7 +179,7 @@ input {
     #group1 {
         border-left: solid 3px;
         border-top: solid 0px;
-        border-color: #12bddb;
+        border-color: #78A9FF;
     }
     #group2 {
         border-left: solid 3px;
@@ -189,12 +189,12 @@ input {
     #group3 {
         border-left: solid 3px;
         border-top: solid 0px;
-        border-color: #b07ef2;
+        border-color: #EE5396;
     }
 }
 
 hr {
-    border: 1.5px solid #13BDDC;
+    border: 1.5px solid #78A9FF;
     width: 40px;
     margin-left: 0px
 
@@ -203,8 +203,8 @@ hr {
 /* Animations */
 
 @keyframes myColorChange1 {
-    0% {background-color: #00000000; color: #12bddb}
-    100% {background-color: #12bddb;}
+    0% {background-color: #00000000; color: #78A9FF}
+    100% {background-color: #78A9FF;}
 }
 
 @keyframes myColorChange2 {
@@ -213,17 +213,17 @@ hr {
 }
 
 @keyframes myColorChange3 {
-    0% {background-color: #00000000; color: #b07ef2}
-    100% {background-color: #b07ef2;}
+    0% {background-color: #00000000; color: #EE5396}
+    100% {background-color: #EE5396;}
 }
 
 @keyframes show {
     0% {background-color: #000000;}
-    100% {background-color: #1D1F28;}
+    100% {background-color: #141414;}
 }
 
 @keyframes show2 {
-    0% {background-color: #1D1F28;}
+    0% {background-color: #141414;}
     100% {background-color: #e6e9ef;}
 }
 
