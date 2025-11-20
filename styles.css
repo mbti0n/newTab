@@ -55,7 +55,6 @@ a:not#subreddit {
         color: #78A9FF;
     }
     a:hover {
-        animation: 0.2s ease-in 0s 1 running myColorChange1;
         background-color: #78A9FF;
         color: #141414;
     }
@@ -70,7 +69,6 @@ a:not#subreddit {
         color: #f78848;
     }
     a:hover {
-        animation: 0.2s ease-in 0s 1 running myColorChange2;
         background-color: #f78848;
         color: #141414;
     }
@@ -85,7 +83,6 @@ a:not#subreddit {
         color: #EE5396;
     }
     a:hover {
-        animation: 0.2s ease-in 0s 1 running myColorChange3;
         background-color: #EE5396;
         color: #141414;
     }
@@ -128,29 +125,9 @@ hr {
 }
 
 /* Animations */
-@keyframes myColorChange1 {
-    0% {background-color: #00000000; color: #78A9FF}
-    100% {background-color: #78A9FF;}
-}
-
-@keyframes myColorChange2 {
-    0% {background-color: #00000000; color: #f78848}
-    100% {background-color: #f78848;}
-}
-
-@keyframes myColorChange3 {
-    0% {background-color: #00000000; color: #EE5396}
-    100% {background-color: #EE5396;}
-}
-
 @keyframes show {
     0% {background-color: #000000;}
     100% {background-color: #141414;}
-}
-
-@keyframes show2 {
-    0% {background-color: #141414;}
-    100% {background-color: #e6e9ef;}
 }
 
 @keyframes slideDown {
@@ -161,24 +138,4 @@ hr {
         opacity: 1
     }
     from{transform: translateY(50%)}
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0
-    }
-    100% {
-        opacity: 1
-    }
-    from{transform: translateX(-15%)}
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1
-    }
-    100% {
-        opacity: 0;
-    }
-    to{transform: translateX(-15%)}
 }
