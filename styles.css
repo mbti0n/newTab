@@ -1,23 +1,12 @@
-@font-face {
-    font-family: "JetBrainsMono Nerd Font Propo";
-    src: url('JetBrainsMonoNerdFontPropo-Medium.ttf');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "JetBrainsMono Nerd Font Propo";
-    src: url('JetBrainsMonoNerdFontPropo-ExtraBold.ttf');
-    font-weight: 800;
-}
-
 #main {
     background-color: #141414;
     color: white;
-    font-family: JetBrainsMono Nerd Font Propo;
+    font-family: monospace;
     margin: 18%;
     transition: background-color 0.25s;
     animation: 0.25s ease-out 0s 1 running show;
-    scale: 1.15
+    scale: 1.15;
+    font-size: 16px;
 }
 
 #main.fade {
@@ -38,7 +27,7 @@
 #date {
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 7px;
+    margin-bottom: 20px;
     margin-top: 7px;
 }
 
@@ -143,7 +132,7 @@ a:not#subreddit {
 }
 
 input {
-    font-family: JetBrainsMono Nerd Font Propo;
+    font-family: monospace;
     background-color: #494d64;
     color: white;
     border: 0px;
