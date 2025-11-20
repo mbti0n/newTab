@@ -9,10 +9,6 @@
     font-size: 16px;
 }
 
-#main.fade {
-    background-color: #e6e9ef;
-}
-
 #timeAndDate {
     margin-right: 250px;
     clear: both;
@@ -31,35 +27,6 @@
     margin-top: 7px;
 }
 
-#modeToggle1 {
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-}
-
-#modeToggle2 {
-    font-size: 16px;
-    color: #4c4f69;
-    text-decoration: none;
-    display: none;
-}
-
-#searchButton {
-    font-size: 16px;
-    /* font-weight: 500; */
-    /* margin-top: 25px; */
-    /* margin-top: 7px; */
-    /* background-col12bddb; */
-    color: #78A9FF;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-}
-
-#searchButton:hover {
-    background-color: #78A9FF;
-    color: #181825;
-}
-
 div {
     float: left;
 }
@@ -68,87 +35,63 @@ a:not#subreddit {
     font-size: 15px;
 }
 
-#group1 {
+#group1, #group2, #group3 {
     border-top: solid 3px;
+    a:link, a:visited {
+        text-decoration: none
+    }
+    a:hover {
+        color: white
+    }
+    padding-right: 50px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    animation: 0.3s 1 ease running slideDown;
+}
+
+#group1 {
     border-color: #78A9FF;
     a:link, a:visited {
         color: #78A9FF;
-        text-decoration: none
     }
     a:hover {
         animation: 0.2s ease-in 0s 1 running myColorChange1;
         background-color: #78A9FF;
-        color: #181825
+        color: #141414;
     }
     h2 {
         color: #78A9FF
     }
-    padding-right: 50px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    animation: 0.3s 1 ease running slideDown;
 }
 
 #group2 {
-    border-top: solid 3px;
     border-color: #f78848;
     a:link, a:visited {
         color: #f78848;
-        text-decoration: none
     }
     a:hover {
         animation: 0.2s ease-in 0s 1 running myColorChange2;
         background-color: #f78848;
-        color: #181825
+        color: #141414;
     }
     h2 {
         color: #f78848
     }
-    padding-right: 50px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    animation: 0.3s 1 ease running slideDown;
 }
 
 #group3 {
-    border-top: solid 3px;
     border-color: #EE5396;
     a:link, a:visited {
         color: #EE5396;
-        text-decoration: none
     }
     a:hover {
         animation: 0.2s ease-in 0s 1 running myColorChange3;
         background-color: #EE5396;
-        color: #181825
+        color: #141414;
     }
     h2 {
         color: #EE5396
     }
-    padding-right: 50px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    animation: 0.3s 1 ease running slideDown;
-}
-
-input {
-    font-family: monospace;
-    background-color: #494d64;
-    color: white;
-    border: 0px;
-    padding: 5px;
-    outline: none;
-}
-
-#searchBar {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-#submit {
-    color: #78A9FF;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 /* Responsive HTML */
@@ -159,25 +102,20 @@ input {
     #content {
         float: left;
     }
-    #searchButton {
-        animation: 0.2s ease-in-out 0s 1 running myColorChange1;
-    }
     #timeAndDate {
         margin-top: -3%;
     }
-    #group1 {
+    #group1, #group2, #group3 {
         border-left: solid 3px;
         border-top: solid 0px;
+    }
+    #group1 {
         border-color: #78A9FF;
     }
     #group2 {
-        border-left: solid 3px;
-        border-top: solid 0px;
         border-color: #f78848;
     }
     #group3 {
-        border-left: solid 3px;
-        border-top: solid 0px;
         border-color: #EE5396;
     }
 }
@@ -190,7 +128,6 @@ hr {
 }
 
 /* Animations */
-
 @keyframes myColorChange1 {
     0% {background-color: #00000000; color: #78A9FF}
     100% {background-color: #78A9FF;}
