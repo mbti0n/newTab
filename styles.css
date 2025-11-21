@@ -17,7 +17,7 @@
 #time {
     font-size: 65px;
     font-weight: 800;
-    margin: 0px;
+    margin: 0;
 }
 
 #date {
@@ -31,116 +31,70 @@ div {
     float: left;
 }
 
-a:not#subreddit {
+a:not(#subreddit) {
     font-size: 15px;
 }
 
 #group1, #group2, #group3 {
     border-top: solid 3px;
-    a:link, a:visited {
-        text-decoration: none
-    }
-    a:hover {
-        color: white
-    }
     padding-right: 50px;
     padding-left: 10px;
     margin-bottom: 20px;
     animation: 0.3s 1 ease running slideDown;
 }
 
-#group1 {
-    border-color: #78A9FF;
-    a:link, a:visited {
-        color: #78A9FF;
-    }
-    a:hover {
-        background-color: #78A9FF;
-        color: #141414;
-    }
-    h2 {
-        color: #78A9FF
-    }
-}
+#group1 { border-color: #78A9FF; }
+#group2 { border-color: #f78848; }
+#group3 { border-color: #EE5396; }
 
-#group2 {
-    border-color: #f78848;
-    a:link, a:visited {
-        color: #f78848;
-    }
-    a:hover {
-        background-color: #f78848;
-        color: #141414;
-    }
-    h2 {
-        color: #f78848
-    }
-}
+#group1 a:link,
+#group1 a:visited { color: #78A9FF; text-decoration: none; }
+#group1 a:hover { background-color: #78A9FF; color: #141414; }
+#group1 h2 { color: #78A9FF; }
 
-#group3 {
-    border-color: #EE5396;
-    a:link, a:visited {
-        color: #EE5396;
-    }
-    a:hover {
-        background-color: #EE5396;
-        color: #141414;
-    }
-    h2 {
-        color: #EE5396
-    }
-}
+#group2 a:link,
+#group2 a:visited { color: #f78848; text-decoration: none; }
+#group2 a:hover { background-color: #f78848; color: #141414; }
+#group2 h2 { color: #f78848; }
+
+#group3 a:link,
+#group3 a:visited { color: #EE5396; text-decoration: none; }
+#group3 a:hover { background-color: #EE5396; color: #141414; }
+#group3 h2 { color: #EE5396; }
 
 /* Responsive HTML */
 @media screen and (max-width: 1080px) {
-    div {
-        width: 100%;
-    }
-    #content {
-        float: left;
-    }
-    #timeAndDate {
-        margin-top: -3%;
-    }
+    div { width: 100%; }
+    #content { float: left; }
+    #timeAndDate { margin-top: -3%; }
     #group1, #group2, #group3 {
         border-left: solid 3px;
-        border-top: solid 0px;
+        border-top: 0;
     }
-    #group1 {
-        border-color: #78A9FF;
-    }
-    #group2 {
-        border-color: #f78848;
-    }
-    #group3 {
-        border-color: #EE5396;
-    }
+    #group1 { border-color: #78A9FF; }
+    #group2 { border-color: #f78848; }
+    #group3 { border-color: #EE5396; }
 }
 
 hr {
     border: 1.5px solid #78A9FF;
     width: 40px;
-    margin-left: 0px
+    margin-left: 0;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
 /* Animations */
 @keyframes show {
-    0% {background-color: #000000;}
-    100% {background-color: #141414;}
+    0% { background-color: #000000; }
+    100% { background-color: #141414; }
 }
 
 @keyframes slideDown {
-    0% {
-        opacity: 0
-    }
-    100% {
-        opacity: 1
-    }
-    from{transform: translateY(50%)}
+    0% { opacity: 0; transform: translateY(50%); }
+    100% { opacity: 1; transform: translateY(0); }
 }
