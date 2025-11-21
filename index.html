@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <script src="main.js"></script>
+<head>
+    <meta charset="UTF-8">
     <title>New Tab</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <body onload="timeLoop()" id="main">
-        <div id="content">
-            <div id="timeAndDate">
-                <p id="time"></p>
-                <p id="date"></p>
+    <script src="main.js"></script>
+</head>
+<body onload="timeLoop()" id="main">
+    <div id="content">
+        <div id="timeAndDate">
+            <p id="time"></p>
+            <p id="date"></p>
+        </div>
+        <div id="linkGroup">
+            <div id="group1">
+                <h2>Main</h2>
+                <ul>
+                    <li><a href="https://my.ucf.edu/?return=true">MyUCF</a></li>
+                    <li><a href="https://chat.openai.com/">ChatGPT</a></li>
+                    <li><a href="https://www.perplexity.ai">Perplexity</a></li>
+                    <li><a href="https://gemini.google.com/app">Gemini</a></li>
+                    <li><a href="https://calendar.google.com/calendar/u/0/r?pli=1">Google Calendar</a></li>
+                    <li><a href="https://app.grammarly.com/">Grammarly</a></li>
+                    <li><a href="https://unsplash.com/">Unsplash</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://mylabmastering.pearson.com/courses/13725845">Pearson</a></li>
+                    <li><a href="https://webcourses.ucf.edu/courses/1487147/external_tools/374802">MAD 2104 Syllabus</a></li>
+                    <li><a href="https://webcourses.ucf.edu/courses/1489897/external_tools/374802">CGS 3763 Syllabus</a></li>
+                    <li><a href="https://webcourses.ucf.edu/courses/1487142/external_tools/374802">STA 4163 Syllabus</a></li>
+                    <li><a href="https://webcourses.ucf.edu/courses/1489923/external_tools/374802">COP 3330 Syllabus</a></li>
+                    <li><a href="https://webcourses.ucf.edu/courses/1490172/external_tools/374802">CIS 4004 Syllabus</a></li>
+                </ul>
             </div>
-            <div id="linkGroup">
-                <div id="group1">
-                    <h2>Main</h2>
-                    <ul>
-                        <li><a href="https://my.ucf.edu/?return=true">MyUCF</a></li>
-                        <li><a href="https://chat.openai.com/">ChatGPT</a></li>
-                        <li><a href="https://www.perplexity.ai">Perplexity</a></li>
-                        <li><a href="https://gemini.google.com/app">Gemini</a></li>
-                        <li><a href="https://calendar.google.com/calendar/u/0/r?pli=1">Google Calendar</a></li>
-                        <li><a href="https://app.grammarly.com/">Grammarly</a></li>
-                        <li><a href="https://unsplash.com/">Unsplash</a></li>
-                    </ul>
-                    <hr>
-                    <ul>
-                        <li><a href="https://mylabmastering.pearson.com/courses/13725845">Pearson</a></li>
-                        <li><a href="https://webcourses.ucf.edu/courses/1487147/external_tools/374802">MAD 2104 Syllabus</a></li>
-                        <li><a href="https://webcourses.ucf.edu/courses/1489897/external_tools/374802">CGS 3763 Syllabus</a></li>
-                        <li><a href="https://webcourses.ucf.edu/courses/1487142/external_tools/374802">STA 4163 Syllabus</a></li>
-                        <li><a href="https://webcourses.ucf.edu/courses/1489923/external_tools/374802">COP 3330 Syllabus</a></li>
-                        <li><a href="https://webcourses.ucf.edu/courses/1490172/external_tools/374802">CIS 4004 Syllabus</a></li>
-                    </ul>
-                </div>
-                <div id="group2">
-                    <h2><a id-"subreddit" href="https://sh.reddit.com">Subreddit</a></h2>
-                    <ul>
-                        <li><a href="https://sh.reddit.com/r/unixporn/">r/unixporn</a></li>
-                        <li><a href="https://sh.reddit.com/r/widgy/">r/widgy</a></li>
-                        <li><a href="https://sh.reddit.com/r/iOSsetups/">r/iOSsetups</a></li>
-                        <li><a href="https://sh.reddit.com/r/LegacyJailbreak/">r/LegacyJailbreak</a></li>
-                        <li><a href="https://sh.reddit.com/r/windowsphone/">r/windowsphone</a></li>
-                        <li><a href="https://sh.reddit.com/r/shortcuts/">r/shortcuts</a></li>
-                        <li><a href="https://sh.reddit.com/r/blackberry/">r/blackberry</a></li>
-                        <li><a href="https://sh.reddit.com/r/dumbphones/">r/dumbphones</a></li>
-                        <li><a href="https://sh.reddit.com/r/symbian/">r/symbian</a></li>
-                    </ul>
-                </div>
-                <div id="group3">
-                    <h2>Others</h2>
-                    <ul>
-                        <li><a href="https://www.espn.com/espnplus/?om-navmethod=topnav">ESPN+</a></li>
-                        <li><a href="https://www.nerdfonts.com/cheat-sheet">NF Cheat Sheet</a></li>
-                        <li><a href="https://ucf.joinhandshake.com/explore">Handshake from UCF</a></li>
-                        <li><a href="https://www.netflix.com/browse">Netflix</a></li>
-                        <li><a href="https://app.gumroad.com/dashboard">Gumroad</a></li>
-                        <li><a href="https://ko-fi.com/mbti0n">Ko-fi</a></li>
-                        <li><a href="https://tonycpa.taxdome.com/app/site">Taxdome (Editor)</a></li>
-                        <li><a href="https://tonycpa.taxdome.com/">Taxdome (Preview)</a></li>
-                        <li><a href="https://librefutbol.su/">Fútbol Libre</a></li>
-                        <li><a href="https://onhockey.tv/">OnHockey.TV</a></li>
-                    </ul>
-                </div>
+            <div id="group2">
+                <h2><a id="subreddit" href="https://sh.reddit.com">Subreddit</a></h2>
+                <ul>
+                    <li><a href="https://sh.reddit.com/r/unixporn/">r/unixporn</a></li>
+                    <li><a href="https://sh.reddit.com/r/widgy/">r/widgy</a></li>
+                    <li><a href="https://sh.reddit.com/r/iOSsetups/">r/iOSsetups</a></li>
+                    <li><a href="https://sh.reddit.com/r/LegacyJailbreak/">r/LegacyJailbreak</a></li>
+                    <li><a href="https://sh.reddit.com/r/windowsphone/">r/windowsphone</a></li>
+                    <li><a href="https://sh.reddit.com/r/shortcuts/">r/shortcuts</a></li>
+                    <li><a href="https://sh.reddit.com/r/blackberry/">r/blackberry</a></li>
+                    <li><a href="https://sh.reddit.com/r/dumbphones/">r/dumbphones</a></li>
+                    <li><a href="https://sh.reddit.com/r/symbian/">r/symbian</a></li>
+                </ul>
+            </div>
+            <div id="group3">
+                <h2>Others</h2>
+                <ul>
+                    <li><a href="https://www.espn.com/espnplus/?om-navmethod=topnav">ESPN+</a></li>
+                    <li><a href="https://www.nerdfonts.com/cheat-sheet">NF Cheat Sheet</a></li>
+                    <li><a href="https://ucf.joinhandshake.com/explore">Handshake from UCF</a></li>
+                    <li><a href="https://www.netflix.com/browse">Netflix</a></li>
+                    <li><a href="https://app.gumroad.com/dashboard">Gumroad</a></li>
+                    <li><a href="https://ko-fi.com/mbti0n">Ko-fi</a></li>
+                    <li><a href="https://tonycpa.taxdome.com/app/site">Taxdome (Editor)</a></li>
+                    <li><a href="https://tonycpa.taxdome.com/">Taxdome (Preview)</a></li>
+                    <li><a href="https://librefutbol.su/">Fútbol Libre</a></li>
+                    <li><a href="https://onhockey.tv/">OnHockey.TV</a></li>
+                </ul>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
