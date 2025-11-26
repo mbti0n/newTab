@@ -1,6 +1,6 @@
 #main {
-    background-color: #141414;
-    color: white;
+    background-color: #242933;
+    color: #D8DEE9;
     font-family: monospace;
     margin: 18%;
     transition: background-color 0.25s;
@@ -43,24 +43,24 @@ a:not(#subreddit) {
     animation: 0.3s 1 ease running slideDown;
 }
 
-#group1 { border-color: #78A9FF; }
-#group2 { border-color: #f78848; }
-#group3 { border-color: #EE5396; }
+#group1 { border-color: #88C0D0; }
+#group2 { border-color: #D08770; }
+#group3 { border-color: #B48EAD; }
 
 #group1 a:link,
-#group1 a:visited { color: #78A9FF; text-decoration: none; }
-#group1 a:hover { background-color: #78A9FF; color: #141414; }
-#group1 h2 { color: #78A9FF; }
+#group1 a:visited { color: #88C0D0; text-decoration: none; }
+#group1 a:hover { background-color: #88C0D0; color: #141414; }
+#group1 h2 { color: #88C0D0; }
 
 #group2 a:link,
-#group2 a:visited { color: #f78848; text-decoration: none; }
-#group2 a:hover { background-color: #f78848; color: #141414; }
+#group2 a:visited { color: #D08770; text-decoration: none; }
+#group2 a:hover { background-color: #D08770; color: #141414; }
 #group2 h2 { color: #f78848; }
 
 #group3 a:link,
-#group3 a:visited { color: #EE5396; text-decoration: none; }
-#group3 a:hover { background-color: #EE5396; color: #141414; }
-#group3 h2 { color: #EE5396; }
+#group3 a:visited { color: #B48EAD; text-decoration: none; }
+#group3 a:hover { background-color: #B48EAD; color: #141414; }
+#group3 h2 { color: #B48EAD; }
 
 /* Responsive HTML */
 @media screen and (max-width: 1080px) {
@@ -71,13 +71,13 @@ a:not(#subreddit) {
         border-left: solid 3px;
         border-top: 0;
     }
-    #group1 { border-color: #78A9FF; }
-    #group2 { border-color: #f78848; }
-    #group3 { border-color: #EE5396; }
+    #group1 { border-color: #88C0D0; }
+    #group2 { border-color: #D08770; }
+    #group3 { border-color: #B48EAD; }
 }
 
 hr {
-    border: 1.5px solid #78A9FF;
+    border: 1.5px solid #88C0D0;
     width: 40px;
     margin-left: 0;
 }
